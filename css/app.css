@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+/*Basic typography*/
+h1, h2, h3, h4, h5, h6 {
+    /*text-align: center;*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 1.75rem;
+    
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+p , span {
+    font-family: 'Lato', sans-serif;
+    color: #777;
+}
+
+
+
+/*Header*/
+header {
+    background: url('../img/Background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+}
+header .main {
+    padding: 5rem 0;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+header h1, header h2 {
+    color: white;
+    /*text-transform: uppercase;*/
+}
+header .hollow.button {
+    color: white;
+    border: solid 4px white;
+    border-radius: 30px;
+}
+
+/*Nav*/
+#mobile-nav {
+    color: white;
+    /*margin-top: 1rem;*/
+}
+#nav {
+    background: white;
+}
+#nav .button {
+    background: inherit;
+    color: #2e3e75;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    transition: border-bottom 150ms;
+    border-bottom: solid 4px white;
+}
+#nav .button:hover {
+    border-bottom: solid 4px #ffcc66;
+}
+
+/*dark bg*/
+.dark-bg {
+    background: #f0f0f0;
+    padding: 5rem 0;
+}
+.dark-bg i {
+    color: #2e3e75;
+}
+.dark-bg .fa-stack-1x {
+    color: white;
+}
+
+section {
+    padding: 5rem 0;
+}
+
+
+
+
+/*Cards*/
+.card {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+}
+
