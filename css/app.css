@@ -13,7 +13,7 @@ h1 {
 }
 h2 {
     font-size: 1.75rem;
-    
+
     font-weight: 400;
     margin-bottom: 1rem;
 }
@@ -26,7 +26,7 @@ p , span {
 
 /*Header*/
 header {
-    background: url('../img/Background.jpg');
+    background: url('../img/background.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
