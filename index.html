@@ -160,7 +160,7 @@
 				
 				<div class="row align-middle project">
 					<div class="small-12 medium-4 columns">
-						<img src="img/project-careershowcase.jpg" style="float:left;">
+						<img src="project-careershowcase.jpg" style="float:left;">
 					</div>
 					<div class="small-12 medium-8 columns text-center">
 						<h4>BTS Career Showcase</h4>
@@ -173,7 +173,7 @@
 
 				<div class="row align-middle project">
 					<div class="small-12 medium-4 columns">
-						<img src="img/project-ywca.jpg" style="float:left;">
+						<img src="project-ywca.jpg" style="float:left;">
 					</div>
 					<div class="small-12 medium-8 columns text-center">
 						<h4>YWCA of Lewiston, ID</h4>
@@ -186,7 +186,7 @@
 
 				<div class="row align-middle project">
 					<div class="small-12 medium-4 columns">
-						<img src="img/project-app.jpg" style="float:left;">
+						<img src="project-app.jpg" style="float:left;">
 					</div>
 					<div class="small-12 medium-8 columns text-center">
 						<h4>Lewis-Clark State College Official App</h4>
@@ -199,7 +199,7 @@
 
 				<div class="row align-middle project">
 					<div class="small-12 medium-4 columns">
-						<img src="img/project-artbeat.jpg" style="float:left;">
+						<img src="project-artbeat.jpg" style="float:left;">
 					</div>
 					<div class="small-12 medium-8 columns text-center">
 						<h4>ArtBeat, Inc.</h4>
@@ -229,10 +229,16 @@
 			<div class="row align-center">
 				<div class="small-12 medium-6 columns text-center">
 					<h3>Contact</h3>
-					<form id="contact-form" method="post" action="http://bonsai.lcsc.edu/cblamires/sendmail/mailer.php">
-						<input type="email" name="email" placeholder="Your Email Address">
-						<textarea name="email" placeholder="Your Message"></textarea>
+					<form id="contact-form" method="post" action="https://formspree.io/clblamires@gmail.com">
+						<input type="email" name="_replyto" placeholder="Your Email Address">
+
+						<textarea name="message" placeholder="Your Message"></textarea>
+
 						<input type="submit" class="expanded button" value="Send" id="submit-button">
+
+						<input type="hidden" name="_subject" value="Contact Form">
+
+						<input type="text" name="_gotcha" style="display:none;">
 					</form>
 				</div>
 			</div>
