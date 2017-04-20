@@ -8,27 +8,26 @@
 	<link rel="stylesheet" href="css/foundation.min.css">
 	<link rel="stylesheet" href="css/app.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-
-	<script src="js/vendor/angular.min.js"></script>
 </head>
 <body>
 
 	<!-- Page Header -->
-	<header class="align-middle">
+	<header class="align-middle" id="home">
 		<div class="row">
-			<div class="small-12 columns">
-				<p class="text-right show-for-small-only">
+			<div class="small-12 columns" data-sticky-container>
+				<p class="sticky text-right show-for-small-only">
 					<button id="mobile-nav">
 						<i class="fa fa-bars fa-2x"></i>
 					</button>
 				</p>
-				<div id="nav" class="expanded button-group hide-for-small-only">
-					<a href="#" class="button">About</a>
-					<a href="#" class="button">Experience</a>
-					<a href="#" class="button">Education</a>
-					<a href="#" class="button">Projects</a>
-					<a href="#" class="button">Skills</a>
-					<a href="#" class="button">Contact</a>
+				<div id="nav" class="sticky expanded button-group hide-for-small-only" data-sticky data-margin-top="0">
+					<a href="#home" class="button">Home</a>
+					<a href="#about" class="button">About</a>
+					<a href="#experience" class="button">Experience</a>
+					<a href="#education" class="button">Education</a>
+					<a href="#projects" class="button">Projects</a>
+					<a href="#skills" class="button">Skills</a>
+					<a href="#contact" class="button">Contact</a>
 				</div>
 			</div>
 		</div>
@@ -37,7 +36,7 @@
 				<h1>Casey Blamires</h1>
 				<h2>Web Developer &middot; Graphic Designer &middot; Professor of Computer Info Tech</h2>
 				<p class="text-center">
-					<a class="large hollow button" href="#">Download Resume</a>
+					<ul class="social-media-header" id="social-icons-header"></ul>
 				</p>
 			</div>
 		</div>
@@ -45,7 +44,7 @@
 
 
 	<!-- About Me -->
-	<section class="row">
+	<section class="row" id="about">
 		<div class="small-12 medium-4 columns text-center">
 			<h3>About Me</h3>
 		</div>
@@ -54,7 +53,7 @@
 				Hi, I'm Casey! I'm a web designer and developer. I've been working on the web for over 15 years and am currently a program advisor and professor for the Web Design and Development program at Lewis-Clark State College. I got started in this industry following the development of an online message board for a retro gaming website. I began writing themes and plugins for the board.
 			</p>
 			<p>
-				I eventually began writing websites for friends and family, including the now defunct website of my old high school. Once I graduated I began working for clients and customers in the region. I graduated from LCSC with my Bachelor's in Web Development with minor in Computer Science and Spanish. I currently study Human Resource Development at Idaho State UNiversity.
+				I eventually began writing websites for friends and family, including the now defunct website of my old high school. Once I graduated I began working for clients and customers in the region. I graduated from LCSC with my Bachelor's in Web Development with minor in Computer Science and Spanish. I currently study Human Resource Development at Idaho State University.
 			</p>
 			<p>
 				My wife and I live in Lewiston with our dog and cats. I like to draw, play games (board, video, card, or mind), computer things, playing music, gardening, painting, and cooking. Building things and solving puzzles are my passion!
@@ -64,7 +63,7 @@
 
 
 	<!-- Work Experience -->
-	<div class="dark-bg">
+	<div class="dark-bg" id="experience">
 		<div class="row">
 			<div class="small-12 columns text-center">
 				<h3>Experience</h3>
@@ -73,40 +72,42 @@
 
 		<!-- Individual Jobs -->
 
-		<div class="row">
-			<div class="small-12 medium-4 columns text-right">
-				<p>August 2014 - Present</p>
-				<span class="fa-stack fa-lg">
+		<div class="row align-center">
+			<div class="small-12 medium-3 columns text-right">
+				<p class="hide-for-small-only">August 2014 - Present</p>
+				<span class="job-icon fa-stack fa-lg">
 					<i class="fa fa-circle fa-stack-2x"></i>
 					<i class="fa fa-html5 fa-stack-1x"></i>
 				</span>
 			</div>
-			<div class="small-12 medium-8 columns card">
+			<div class="small-12 medium-6 columns card">
 				<div class="card-section">
 					<h4>Lewis-Clark State College</h4>
 					<h5>Professor of Web Development</h5>
 					<p>
 						Teaching 15 credits per semester of web design and development basics, JavaScript programming, database design and usage, web and mobile app development, website publishing, computer information systems and technology. I also advise students in the program, assist with on-campus committees, and provide instructional support across campus.
 					</p>
+					<p class="show-for-small-only">August 2014 - Present</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="row">
-			<div class="small-12 medium-4 columns text-right">
-				<p>August 2006 - August 2014</p>
-				<span class="fa-stack fa-lg">
+		<div class="row align-center">
+			<div class="small-12 medium-3 columns text-right">
+				<p class="hide-for-small-only">August 2006 - August 2014</p>
+				<span class="job-icon fa-stack fa-lg">
 					<i class="fa fa-circle fa-stack-2x"></i>
 					<i class="fa fa-paint-brush fa-stack-1x"></i>
 				</span>
 			</div>
-			<div class="small-12 medium-8 columns card">
+			<div class="small-12 medium-6 columns card">
 				<div class="card-section">
 					<h4>ArtBeat, Inc.</h4>
 					<h5>Web Developer and Graphic Designer</h5>
 					<p>
 						Building the main website, eCommerce systems, and internal applications for the company. For customers, graphic design and printing technologies as well as customer service with a smile.
 					</p>
+					<p class="show-for-small-only">August 2006 - August 2014</p>
 				</div>
 			</div>
 		</div>
@@ -114,7 +115,7 @@
 
 
 	<!-- Education -->
-	<section class="row align-center">
+	<section class="row align-center" id="education">
 		<div class="small-12 medium-9 columns">
 			<h3 class="text-center">Education</h3>
 
@@ -147,111 +148,120 @@
 
 
 	<!-- Projects -->
-	<div class="dark-bg">
-		<section class="row">
-			<div class="small-12 columns">
+	<div class="dark-bg" id="projects">
+		<div class="row">
+			<div class="small-12 columns text-center">
 				<h3>Projects</h3>
 			</div>
-		</section>
+		</div>
 
-		<section class="row align-center">
+		<div class="row align-center">
 			<div class="small-12 medium-10 columns">
 				
-				<div class="row align-middle">
+				<div class="row align-middle project">
 					<div class="small-12 medium-4 columns">
-						<img src="http://fakeimg.pl/350x200/666666/000" style="float:left;">
+						<img src="img/project-careershowcase.jpg" style="float:left;">
 					</div>
-					<div class="small-12 medium-8 columns">
+					<div class="small-12 medium-8 columns text-center">
 						<h4>BTS Career Showcase</h4>
 						<p>
-							Some text about this app
+							For promoting career and technical education in Idaho, the BTS Career Showcase website is a single page application built in AngularJS using Zurb Foundation. Designed and launched in March 2017.
 						</p>
-						<a class="hollow button" href="#">View Project</a>
+						<a class="hollow button" href="http://bonsai.lcsc.edu/bts" target="_blank">View Project</a>
 					</div>
 				</div>
 
-				<div class="row align-middle">
+				<div class="row align-middle project">
 					<div class="small-12 medium-4 columns">
-						<img src="http://fakeimg.pl/350x200/666666/000" style="float:left;">
+						<img src="img/project-ywca.jpg" style="float:left;">
 					</div>
-					<div class="small-12 medium-8 columns">
-						<h4>LCSC Official App</h4>
+					<div class="small-12 medium-8 columns text-center">
+						<h4>YWCA of Lewiston, ID</h4>
 						<p>
-							Some text about this app
+							The YWCA website was in need of a redesign to bring the site up to today's standards using HTML5, CSS3, and a mobile-friendly design.
 						</p>
-						<a class="hollow button" href="#">View Project</a>
+						<a class="hollow button" href="http://www.ywcaidaho.org" target="_blank">View Project</a>
 					</div>
 				</div>
 
-				<div class="row align-middle">
+				<div class="row align-middle project">
 					<div class="small-12 medium-4 columns">
-						<img src="http://fakeimg.pl/350x200/666666/000" style="float:left;">
+						<img src="img/project-app.jpg" style="float:left;">
 					</div>
-					<div class="small-12 medium-8 columns">
-						<h4>YWCA Lewiston, ID</h4>
+					<div class="small-12 medium-8 columns text-center">
+						<h4>Lewis-Clark State College Official App</h4>
 						<p>
-							Some text about this app
+							As part of my bachelor's degree project, we built the offical app for LCSC on iOS. An Android version is coming soon.
 						</p>
-						<a class="hollow button" href="#">View Project</a>
+						<a class="hollow button" href="https://itunes.apple.com/us/app/lcsc/id943255772?mt=8" target="_blank">View Project</a>
 					</div>
 				</div>
 
-				<div class="row align-middle">
+				<div class="row align-middle project">
 					<div class="small-12 medium-4 columns">
-						<img src="http://fakeimg.pl/350x200/666666/000" style="float:left;">
+						<img src="img/project-artbeat.jpg" style="float:left;">
 					</div>
-					<div class="small-12 medium-8 columns">
+					<div class="small-12 medium-8 columns text-center">
 						<h4>ArtBeat, Inc.</h4>
 						<p>
-							Some text about this app
+							ArtBeat does custom screen printing and embroidery, and I built their websites and eCommerce solutions. I also programmed all internal apps used by management and employees.
 						</p>
-						<a class="hollow button" href="#">View Project</a>
+						<a class="hollow button" href="http://www.artbeatinc.com" target="_blank">View Project</a>
 					</div>
 				</div>
 
 			</div>
-		</section>
+		</div>
 	</div>
 
 
 	<!-- Skills -->
-	<section class="row">
+	<section class="row" id="skills">
 		<div class="small-12 columns text-center" ng-controller="skillsCtrl">
 			<h3>Skills</h3>
-			<p>
-				<span class="label" ng-repeat="skill in skills">{{ skill }}</span>
-			</p>
+			<p id="skills-set"></p>
 		</div>
 	</section>
 
 	<!-- Contact Us -->
-	<div class="contact">
-		<section class="row align-center">
-			<div class="small-12 medium-6 columns text-center">
-				<h3>Contact</h3>
-				<form>
-					<input type="email" name="email" placeholder="Your Email Address">
-					<textarea name="email" placeholder="Your Message"></textarea>
-					<input type="submit" class="expanded button" value="Send">
-				</form>
+	<div class="contact" id="contact">
+		<section>
+			<div class="row align-center">
+				<div class="small-12 medium-6 columns text-center">
+					<h3>Contact</h3>
+					<form id="contact-form" method="post" action="http://bonsai.lcsc.edu/cblamires/sendmail/mailer.php">
+						<input type="email" name="email" placeholder="Your Email Address">
+						<textarea name="email" placeholder="Your Message"></textarea>
+						<input type="submit" class="expanded button" value="Send" id="submit-button">
+					</form>
+				</div>
+			</div>
+			<div class="row align-center">
+				<div class="small-12 medium-6 columns">
+					<div id="contact-response" class="hide callout" data-closable>
+						<p id="callout-message"></p>
+						<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				</div>
 			</div>
 		</section>
 	</div>
 
 	<!-- Footer -->
 	<footer>
-		<section class="row">
-			<div class="small-12 medium-6 columns text-left">
+		<div class="row">
+			<div class="small-12 medium-6 columns text-left copyright">
 				<p>
-					Copyright &copy; 2017 Casey Blamires
+					Copyright &copy; <span id="copy-year"></span> Casey Blamires
 				</p>
 			</div>
 			<div class="small-12 medium-6 columns text-right">
-				<p>
-					Social Media
-				</p>
+				<ul class="social-media" id="social-icons-footer">
+				</ul>
 			</div>
-		</section>
+		</div>
 	</footer>
 
 
